@@ -20,7 +20,7 @@ const Footer = () => {
                     <Link className='cursor-pointer' href={"#"}><Image src={fbicon} width="100%" height='100%' alt="footer Logo" ></Image></Link>
                     <Link className='cursor-pointer' href={"#"}><Image src={twitericon} width="100%" height='100%' alt="footer Logo"></Image></Link>
                 </div>
-                <div className='flex-col mt-0 flex lg:flex-col justify-between items-center lg:mt-10 pt-8 text-white'>
+                <div className='flex-col mt-0 flex lg:flex-row justify-between items-center lg:mt-10 pt-8 text-white'>
                     <p className='opacity-50'>© 2026 KeenKeeper. All rights reserved.</p>
                     <ul className='flex justify-center items-center gap-3.5'>
                         <Link href={"#"} className='opacity-50'>Privacy Policy</Link>
