@@ -12,7 +12,7 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <div className="shadow-2xs py-5 relative">
+    <div className="shadow-2xs py-5 relative bg-white">
       <div className="flex w-full max-w-[1110px] mx-auto justify-between items-center px-4">
         <Image
           src={Logo}
