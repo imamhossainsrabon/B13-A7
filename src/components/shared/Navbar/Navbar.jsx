@@ -3,6 +3,7 @@ import React from "react";
 import Logo from "@/assets/logo.png";
 import MyLink from "@/components/shared/Navbar/MyLink";
 import MobileMenu from "@/components/shared/Navbar/MobileMenu";
+import Link from "next/link";
 
 const navItems = [
   { path: "/", text: "Home" },
@@ -14,13 +15,13 @@ const Navbar = () => {
   return (
     <div className="shadow-2xs py-5 relative bg-white">
       <div className="flex w-full max-w-[1110px] mx-auto justify-between items-center px-4">
-        <Image
+        <Link href={'/'}><Image
           src={Logo}
           width={141}
           height={31}
           alt="logo"
           className="w-[141px] h-[31px] object-contain"
-        />
+        /></Link>
 
         <ul className="hidden md:flex gap-4 justify-center items-center">
           {navItems.map((item, index) => (
