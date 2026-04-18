@@ -1,3 +1,4 @@
+import Buttons from "@/components/FriendCardComponent/Button";
 import Image from "next/image";
 import React from "react";
 import { FaHistory } from "react-icons/fa";
@@ -91,19 +92,8 @@ const friendDetailPage = async ({ params }) => {
         </div>
         <div className="bg-white mt-3.5 p-6 rounded-lg [box-shadow:0_3px_6px_rgba(0,_0,_0,_0.08)]">
           <p className="text-xl font-medium text-[#244D3F] mb-4">Quick Check-In</p>
-          <div className="grid grid-cols-3 gap-4 text-center justify-center">
-            <button className="btn flex-col items-center justify-center bg-[#F8FAFC] p-4 rounded-lg h-24">
-              <TbPhoneCall className="w-6 h-6"/>
-              <p>Call</p>
-            </button>
-            <button className="btn flex-col items-center justify-center   bg-[#F8FAFC]  rounded-lg h-24">
-              <MdOutlineTextsms className="w-6 h-6" />
-              <p>Text</p>
-            </button>
-            <button className="btn flex-col items-center justify-center   bg-[#F8FAFC] p-4 rounded-lg h-24">
-              <IoVideocamOutline className="w-6 h-6"/>
-              <p>Video</p>
-            </button>
+          <div className="grid lg:grid-cols-3 gap-4 text-center justify-center">
+            <Buttons />
           </div>
         </div>
         <div className="bg-white mt-6  mt-3.5 p-6 rounded-lg [box-shadow:0_3px_6px_rgba(0,_0,_0,_0.08)]">
